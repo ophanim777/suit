@@ -1,6 +1,6 @@
 function getComputerChoice() {
-    const a1 ="rock"
-    const a2 ="paper"
-    const a3 ="scissors"
-    return Math.random(a1, a2, a3)
+    const option = ['rock', 'paper', 'scissors'];
+  const suit = Math.floor(Math.random() * suit.length);
+  return option[suit];
 }
+console.log(getComputerChoice);
