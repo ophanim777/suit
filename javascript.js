@@ -2,4 +2,4 @@ function getComputerChoice() {
   let choices = ["rock", "paper", "scissors"];
   let computerChoice = choices.at(Math.floor(Math.random() * choices.length));
   return computerChoice;}
-  console.log(getComputerChoice)
+console.log(getComputerChoice())
