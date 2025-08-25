@@ -3,10 +3,10 @@ function getComputerChoice() {
   let computerChoice = choices.at(Math.floor(Math.random() * choices.length));
   return computerChoice;}
 function getHumanChoice() {
-  let choice = prompt("Enter rock, paper, or scissors:").toLowerCase();
-  while (!["rock", "paper", "scissors"].includes(choice)) {
-    choice = prompt("Invalid choice. Please enter rock, paper, or scissors:").toLowerCase();
+  let choices = prompt("Enter rock, paper, or scissors:").toLowerCase();
+  while (!["rock", "paper", "scissors"].includes(choices)) {
+    choices = prompt("Invalid choice. Please enter rock, paper, or scissors:").toLowerCase();
   }
-  return choice;
+  return choices;
 }
 console.log(getHumanChoice());
