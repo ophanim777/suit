@@ -9,3 +9,4 @@ function getHumanChoice() {
   }
   return choice;
 }
+console.log(getHumanChoice());
