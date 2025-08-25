@@ -34,4 +34,9 @@ function playRound(humanChoice, computerChoice) {
     function playGame() {
       humanScore = 0;
       computerScore = 0;
+      for (let i = 0; i < 3; i++) {
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+  }
     }
