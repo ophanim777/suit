@@ -23,10 +23,14 @@ function playRound(humanChoice, computerChoice) {
     (humanChoice === "paper" && computerChoice === "rock") ||
     (humanChoice === "scissors" && computerChoice === "paper")
   ) {
+    humanScore++;
     console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     return `You win! ${humanChoice} beats ${computerChoice}`;
   } else {
+    computerScore++;
     console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
     return `You lose! ${computerChoice} beats ${humanChoice}`;
   }
-console.log(getHumanChoice());
+    function playGame() {
+      
+    }
