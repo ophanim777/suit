@@ -39,4 +39,12 @@ function playRound(humanChoice, computerChoice) {
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
   }
-    }
+  
+    if (humanScore > computerScore) {
+    return "You win the game!";
+  } else if (computerScore > humanScore) {
+    return "You lose the game!";
+  } else {
+    return "It's a tie!";
+  }
+}
