@@ -32,5 +32,6 @@ function playRound(humanChoice, computerChoice) {
     return `You lose! ${computerChoice} beats ${humanChoice}`;
   }
     function playGame() {
-      
+      humanScore = 0;
+      computerScore = 0;
     }
