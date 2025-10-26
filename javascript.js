@@ -4,10 +4,9 @@ function getComputerChoice() {
   let choices = ["rock", "paper", "scissors"];
   let computerChoice = choices.at(Math.floor(Math.random() * choices.length));
   return computerChoice;}
-  
+
 function playRound(humanChoice, computerChoice) {
-  humanChoice = humanChoice.toLowerCase();
-  computerChoice = computerChoice.toLowerCase();
+  let resultText="";
 }
  if (humanChoice === computerChoice) {
     console.log("It's a draw!");
