@@ -29,7 +29,20 @@ function playRound(humanChoice, computerChoice) {
       roundResult.textContent = message;
       scoreDisplay.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
     }
-    
+
+    function checkWinner() {
+      const winnerDisplay = document.getElementById("winner");
+
+      if (humanScore === 5 || computerScore === 5) {
+        if (humanScore === 5) {
+          winnerDisplay.textContent = "🎉 You won the game!";
+        } else {
+          winnerDisplay.textContent = "💀 You lost the game!";
+        }
+      }
+    }
+
+
 document.getElementById("rock").addEventListener("click", () => {
   playRound("rock", getComputerChoice());
 });
