@@ -21,7 +21,15 @@ function playRound(humanChoice, computerChoice) {
     computerScore++;
     resultText = `You lose this round! ${computerChoice} beats ${humanChoice}.`;
   }
-   
+
+    function updateResults(message) {
+      const roundResult = document.getElementById("round-result");
+      const scoreDisplay = document.getElementById("score");
+
+      roundResult.textContent = message;
+      scoreDisplay.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+    }
+    
 document.getElementById("rock").addEventListener("click", () => {
   playRound("rock", getComputerChoice());
 });
