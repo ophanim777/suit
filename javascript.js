@@ -9,20 +9,17 @@ function playRound(humanChoice, computerChoice) {
   let resultText="";
 }
  if (humanChoice === computerChoice) {
-    console.log("It's a draw!");
-    return "It's a draw!";
+     resultText = `It's a draw! You both chose ${humanChoice}.`;
   } else if (
     (humanChoice === "rock" && computerChoice === "scissors") ||
     (humanChoice === "paper" && computerChoice === "rock") ||
     (humanChoice === "scissors" && computerChoice === "paper")
   ) {
     humanScore++;
-    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-    return `You win! ${humanChoice} beats ${computerChoice}`;
+    resultText = `You win this round! ${humanChoice} beats ${computerChoice}.`;
   } else {
     computerScore++;
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
-    return `You lose! ${computerChoice} beats ${humanChoice}`;
+    resultText = `You lose this round! ${computerChoice} beats ${humanChoice}.`;
   }
     function playGame() {
       humanScore = 0;
