@@ -21,23 +21,7 @@ function playRound(humanChoice, computerChoice) {
     computerScore++;
     resultText = `You lose this round! ${computerChoice} beats ${humanChoice}.`;
   }
-    function playGame() {
-      humanScore = 0;
-      computerScore = 0;
-      for (let i = 0; i++;) {
-    const humanChoice = getHumanChoice();
-    const computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
-  }
-
-    if (humanScore > computerScore) {
-    return "You win the game!";
-  } else if (computerScore > humanScore) {
-    return "You lose the game!";
-  } else {
-    return "It's a draw!";
-  }
-}
+   
 document.getElementById("rock").addEventListener("click", () => {
   playRound("rock", getComputerChoice());
 });
