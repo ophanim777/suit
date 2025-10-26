@@ -7,7 +7,7 @@ function getComputerChoice() {
 
 function playRound(humanChoice, computerChoice) {
   let resultText="";
-}
+
  if (humanChoice === computerChoice) {
      resultText = `It's a draw! You both chose ${humanChoice}.`;
   } else if (
@@ -21,6 +21,9 @@ function playRound(humanChoice, computerChoice) {
     computerScore++;
     resultText = `You lose this round! ${computerChoice} beats ${humanChoice}.`;
   }
+  updateResults(resultText);
+  checkWinner();
+}
 
     function updateResults(message) {
       const roundResult = document.getElementById("round-result");
